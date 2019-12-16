@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57075306178",
+    "firebase_url": "https://doctorappointment-aab19.firebaseio.com",
+    "project_id": "doctorappointment-aab19",
+    "storage_bucket": "doctorappointment-aab19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57075306178:android:61d6867512a4bdf439755b",
+        "android_client_info": {
+          "package_name": "com.id.drapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57075306178-dv1bmvrahnvvkomi9j39iduqc8benk4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1uNK4dgUyNjgg-A_kpiW1mMgMr9Rb634"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57075306178-dv1bmvrahnvvkomi9j39iduqc8benk4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
