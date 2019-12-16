@@ -11,15 +11,6 @@
     </group>
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_sync"
-            android:title="Sync"
-            android:icon="@drawable/ic_sync_black_24dp"/>
-
-        <item
-            android:id="@+id/nav_about"
-            android:title="About Us"
-            android:icon="@drawable/ic_perm_identity_black_24dp"/>
 
         <item
             android:id="@+id/nav_logout"

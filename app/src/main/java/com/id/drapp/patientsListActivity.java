@@ -70,8 +70,6 @@ public class patientsListActivity extends AppCompatActivity implements Navigatio
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        showAboutUsDialog();
-
         adapter1 = new patientAdapter(this, null);
         patientSearchList.setAdapter(adapter1);
         patientSearchList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -199,39 +197,11 @@ public class patientsListActivity extends AppCompatActivity implements Navigatio
 
         if (id == R.id.nav_logout) {
             finishTheActivity();
-        }else if(id == R.id.nav_sync){
-            patientsFragment.initialize(this);
         }else if (id == R.id.settings){
             Intent intent = new Intent(this, settingsActivity.class);
             startActivity(intent);
-        }else if (id == R.id.nav_about){
-            mMaterialDialog.show();
         }
         return true;
-    }
-
-    private void showAboutUsDialog() {
-        TextView textView = new TextView(this);
-        textView.setClickable(true);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "Doctorave is a Complete app for Doctors and Patients. Developed by Bhavya Arora. More Features Coming soon... <br><br>&emsp;<a href='https://github.com/bhavya-arora'> Github </a> &emsp;" +
-                "  <a href='https://in.linkedin.com/in/bhavya-arora-716b37145'> Linkedin </a> &emsp;  <a href='http://bhavya-arora.me/'> Website </a>" +
-                "<br><br><strong>Privacy and Policy / Open Source Licenses:</strong> <a href='http://bhavya-arora.me/doctorave-privacy-policy'> Check Here. </a><br><br><Strong>Fork us on Github: </Strong><a href='https://github.com/bhavya-arora/Doctorave'>Here. </a><br><br> If any Issue/Bug contact us here: <a href=\"mailto:gobhavyaarora15@gmail.com?Subject=Hello%20again\" target=\"_top\">here</a>";
-        textView.setText(Html.fromHtml(text));
-
-
-        mMaterialDialog = new MaterialDialog(this)
-                .setTitle("Doctorave")
-                .setMessage("Doctorave is a Complete App for Doctors and Patient. Developed by Bhavya Arora.")
-                .setContentView(R.layout.aboutusdialog)
-                .setContentView(textView)
-                .setPositiveButton("OK", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        mMaterialDialog.dismiss();
-                    }
-                });
     }
 
     public void finishTheActivity(){
