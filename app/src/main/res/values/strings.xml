@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Doctor Appointment</string>
+    <string name="app_name">Finding Doctor</string>
     <string name="createAccount">Create Account</string>
     <string name="title_activity_patients">patientsActivity</string>
     <string name="navigation_drawer_open">Open Navigation</string>

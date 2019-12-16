@@ -87,7 +87,6 @@ public class hospitalActivity extends AppCompatActivity {
             }
         });
 
-        showAboutUsDialog();
 
         /////////////////////////////////////
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -276,29 +275,6 @@ public class hospitalActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void showAboutUsDialog() {
-        TextView textView = new TextView(this);
-        textView.setClickable(true);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "Doctorave is a Complete app for Doctors and Patients. Developed by Bhavya Arora. More Features Coming soon... <br><br>&emsp;<a href='https://github.com/bhavya-arora'> Github </a> &emsp;" +
-                "  <a href='https://in.linkedin.com/in/bhavya-arora-716b37145'> Linkedin </a> &emsp;  <a href='http://bhavya-arora.me/'> Website </a>" +
-                "<br><br><strong>Privacy and Policy / Open Source Licenses:</strong> <a href='http://bhavya-arora.me/doctorave-privacy-policy'> Check Here. </a><br><br><Strong>Fork us on Github: </Strong><a href='https://github.com/bhavya-arora/Doctorave'>Here. </a><br><br> If any Issue/Bug contact us here: <a href=\"mailto:gobhavyaarora15@gmail.com?Subject=Hello%20again\" target=\"_top\">here</a>";
-        textView.setText(Html.fromHtml(text));
-
-
-        mMaterialDialog = new MaterialDialog(this)
-                .setTitle("Doctorave")
-                .setMessage("Doctorave is a Complete App for Doctors and Patient. Developed by Bhavya Arora.")
-                .setContentView(R.layout.aboutusdialog)
-                .setContentView(textView)
-                .setPositiveButton("OK", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        mMaterialDialog.dismiss();
-                    }
-                });
-    }
 
     private void logoutPatient() {
         doctorPreference.savePhoneNumberInSP(this, null);

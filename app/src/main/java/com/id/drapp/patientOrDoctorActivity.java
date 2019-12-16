@@ -35,7 +35,6 @@ public class patientOrDoctorActivity extends AppCompatActivity {
         areYouDoctor = findViewById(R.id.areYouDoctor);
         areYouPatient = findViewById(R.id.areYouPatient);
 
-
         areYouDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
