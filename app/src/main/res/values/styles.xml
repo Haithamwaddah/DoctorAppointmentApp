@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
@@ -51,7 +51,7 @@
 
         <item name="windowActionBar">true</item>
         <item name="colorAccent">@android:color/white</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
         <item name="android:dialogLayout">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@color/actionBar</item>
