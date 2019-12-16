@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Dark.Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+
+        <item name="windowActionBar">true</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:dialogLayout">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/actionBar</item>
+    </style>
+</resources>
