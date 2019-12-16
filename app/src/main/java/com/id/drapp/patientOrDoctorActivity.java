@@ -35,13 +35,13 @@ public class patientOrDoctorActivity extends AppCompatActivity {
 
         areYouDoctor = findViewById(R.id.areYouDoctor);
         areYouPatient = findViewById(R.id.areYouPatient);
-        privacyPolicy = findViewById(R.id.privacyPolicy);
+//        privacyPolicy = findViewById(R.id.privacyPolicy);
 
-        privacyPolicy.setClickable(true);
-        privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
-
-        String text = "<a href='http://bhavya-arora.me/doctorave-privacy-policy'> Privacy Policy </a>";
-        privacyPolicy.setText(Html.fromHtml(text));
+//        privacyPolicy.setClickable(true);
+//        privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
+//
+//        String text = "<a href='http://bhavya-arora.me/doctorave-privacy-policy'> Privacy Policy </a>";
+//        privacyPolicy.setText(Html.fromHtml(text));
 
         areYouDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
