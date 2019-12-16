@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/loginCream"
+        android:background="@color/softblue"
         android:orientation="vertical">
 
         <TextView
@@ -55,7 +55,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Gender"
-                android:textColor="@color/lightgreen"/>
+                android:textColor="@color/blueish"/>
             <TextView
                 android:id="@+id/detailGender"
                 android:layout_width="0dp"

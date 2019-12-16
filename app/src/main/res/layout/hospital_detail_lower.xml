@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/loginCream"
+        android:background="@color/softblue"
         android:orientation="vertical">
 
         <TextView

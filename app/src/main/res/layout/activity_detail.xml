@@ -30,6 +30,7 @@
                 app:layout_scrollFlags="exitUntilCollapsed">
 
                 <RelativeLayout
+                    android:background="@color/blueish"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
