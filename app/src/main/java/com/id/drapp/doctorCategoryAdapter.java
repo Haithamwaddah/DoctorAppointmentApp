@@ -34,7 +34,7 @@ public class doctorCategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return "Hospitals";
+            return "Doctor";
         } else {
            return "Appointments";
         }

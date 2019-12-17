@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "57075306178-jh7mo1pg002kcdhfab8g8rk6he15ucll.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.id.drapp",
-            "certificate_hash": "3188d0f9c3d4eda4985aab5afd9419711766a8c8"
-          }
-        },
-        {
           "client_id": "57075306178-kbe4fsuoqfvclto7i79qf0idb48ps2d4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

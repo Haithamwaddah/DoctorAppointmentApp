@@ -9,15 +9,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class patientOrDoctorActivity extends AppCompatActivity {
 
     private Button areYouDoctor;
     private Button areYouPatient;
+//    private DatabaseReference mDatabaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_or_doctor);
+//        mDatabaseReference = FirebaseDatabase.getInstance().getReference();
+//        Hospital h = new Hospital(1,"ABC");
+//        mDatabaseReference.child("hospitals").child("1").setValue(h);
 
         if(doctorPreference.getBooleanFromSP(this)){
             if(doctorPreference.getUsernameFromSP(this) != null){
@@ -52,3 +59,17 @@ public class patientOrDoctorActivity extends AppCompatActivity {
         });
     }
 }
+//class Hospital {
+//
+//    public int no;
+//    public String name;
+//
+//    public Hospital() {
+//        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+//    }
+//
+//    public Hospital(int no, String name) {
+//        this.no = no;
+//        this.name = name;
+//    }
+//}
