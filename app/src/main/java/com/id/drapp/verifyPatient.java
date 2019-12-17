@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.FirebaseException;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.stfalcon.smsverifycatcher.OnSmsCatchListener;
@@ -38,10 +39,15 @@ public class verifyPatient extends AppCompatActivity {
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_patient);
+
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
 
         if (doctorPreference.getPhoneNumberFromSP(this) != null){
             Intent intent = new Intent(this, hospitalActivity.class);
@@ -75,6 +81,7 @@ public class verifyPatient extends AppCompatActivity {
                             phoneNumberView.setError("Cannot be Empty");
                         }else{
                             progressDialog.show();
+
                             fullPhoneNo = countryCodeView.getText().toString().trim().concat(phoneNumberView.getText().toString().trim());
                             String numberToVerify = fullPhoneNo; //Should come from user input
 

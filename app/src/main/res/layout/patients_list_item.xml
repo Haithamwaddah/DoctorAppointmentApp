@@ -21,19 +21,20 @@
             android:id="@+id/patientName"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:textStyle="normal"
             android:layout_weight="1"
+            android:hint="Oma"
             android:textColor="@android:color/black"
-            android:hint="Sanjay Kumar"/>
+            android:textStyle="normal" />
+
         <TextView
             android:id="@+id/patientAddress"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:ellipsize="end"
+            android:hint="Hima"
             android:maxLines="1"
-            android:textColor="@color/album_title"
-            android:hint="Sanjay Kumar"/>
+            android:textColor="@color/album_title" />
         <TextView
             android:id="@+id/patientAge"
             android:layout_width="wrap_content"
