@@ -105,6 +105,7 @@ public class verifyPatient2 extends AppCompatActivity {
                             Intent intent1 = new Intent(verifyPatient2.this, hospitalActivity.class);
                             intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent1.putExtra("phone", phone);
+                            progressDialog.dismiss();
                             startActivity(intent1);
                         } else {
                             // Sign in failed, display a message and update the UI
