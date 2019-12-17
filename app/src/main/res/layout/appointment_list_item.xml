@@ -24,7 +24,7 @@
                 android:layout_weight="1"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
-                android:hint="Sanjay Kumar"/>
+                android:hint="Name"/>
             <TextView
                 android:id="@+id/appointmentTime"
                 android:layout_width="0dp"
@@ -33,7 +33,7 @@
                 android:layout_weight="1"
                 android:textSize="10sp"
                 android:textColor="@android:color/darker_gray"
-                android:hint="Sanjay Kumar"/>
+                android:hint="Time"/>
         </LinearLayout>
         <TextView
             android:id="@+id/hospitalName"
@@ -44,7 +44,7 @@
             android:textSize="12sp"
             android:maxLines="1"
             android:textColor="@color/album_title"
-            android:hint="Sanjay Kumar"/>
+            android:hint="Hospital"/>
         <TextView
             android:id="@+id/problem"
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:fontFamily="sans-serif-condensed"
             android:layout_weight="1"
             android:textColor="@color/album_title"
-            android:hint="12"/>
+            android:hint="problem"/>
 
     </LinearLayout>
 

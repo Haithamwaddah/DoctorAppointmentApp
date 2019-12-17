@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "57075306178-kbe4fsuoqfvclto7i79qf0idb48ps2d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.id.drapp",
+            "certificate_hash": "7b29185b5a03638abf5ab542b0f636ca810c7e91"
+          }
+        },
+        {
+          "client_id": "57075306178-90deq29anq4ps13ovatkrf64kin557ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.id.drapp",
+            "certificate_hash": "e8dbaa18aa9df58a096122b0392c9b530a0557f6"
+          }
+        },
+        {
           "client_id": "57075306178-dv1bmvrahnvvkomi9j39iduqc8benk4p.apps.googleusercontent.com",
           "client_type": 3
         }
