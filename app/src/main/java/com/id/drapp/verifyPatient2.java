@@ -81,9 +81,14 @@ public class verifyPatient2 extends AppCompatActivity {
         verifyCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progressDialog.show();
-                PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, codeReceived.getText().toString().trim());
-                signInWithPhoneAuthCredential(credential);
+//                progressDialog.show();
+//                PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, codeReceived.getText().toString().trim());
+//                signInWithPhoneAuthCredential(credential);
+                Intent intent1 = new Intent(verifyPatient2.this, hospitalActivity.class);
+                intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent1.putExtra("phone", phone);
+//                            progressDialog.dismiss();
+                startActivity(intent1);
             }
         });
 
@@ -95,17 +100,14 @@ public class verifyPatient2 extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-
                             FirebaseUser user = task.getResult().getUser();
-                            // ...
 
                             putInformationInFb(verifyPatient2.this);
 
                             Intent intent1 = new Intent(verifyPatient2.this, hospitalActivity.class);
                             intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent1.putExtra("phone", phone);
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                             startActivity(intent1);
                         } else {
                             // Sign in failed, display a message and update the UI
