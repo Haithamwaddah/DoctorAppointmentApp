@@ -218,39 +218,39 @@ public class hospitalActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.patientmenu, menu);
 
-        if(doctorPreference.getIsTapTargetShown(hospitalActivity.this)){
-
-        }else {
-            new Handler().post(new Runnable() {
-                @Override
-                public void run() {
-                    final View view = findViewById(R.id.searchBar);
-
-                    new MaterialTapTargetPrompt.Builder(hospitalActivity.this)
-                            .setTarget(view)
-                            .setBackgroundColour(getResources().getColor(R.color.actionBar))
-                            .setPrimaryText("Search Hospitals")
-                            .setSecondaryText("You can Search Hospitals Registered with us.")
-                            .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener()
-                            {
-                                @Override
-                                public void onHidePrompt(MotionEvent event, boolean tappedTarget)
-                                {
-                                    //TODO: Store in SharedPrefs so you don't show this prompt again.
-                                    doctorPreference.saveIsTapTargetShown(hospitalActivity.this, true);
-                                }
-
-                                @Override
-                                public void onHidePromptComplete()
-                                {
-                                    doctorPreference.saveIsTapTargetShown(hospitalActivity.this, true);
-                                }
-                            })
-                            .show();
-
-                }
-            });
-        }
+//        if(doctorPreference.getIsTapTargetShown(hospitalActivity.this)){
+//
+//        }else {
+//            new Handler().post(new Runnable() {
+//                @Override
+//                public void run() {
+//                    final View view = findViewById(R.id.searchBar);
+//
+//                    new MaterialTapTargetPrompt.Builder(hospitalActivity.this)
+//                            .setTarget(view)
+//                            .setBackgroundColour(getResources().getColor(R.color.actionBar))
+//                            .setPrimaryText("Search Hospitals")
+//                            .setSecondaryText("You can Search Hospitals Registered with us.")
+//                            .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener()
+//                            {
+//                                @Override
+//                                public void onHidePrompt(MotionEvent event, boolean tappedTarget)
+//                                {
+//                                    //TODO: Store in SharedPrefs so you don't show this prompt again.
+//                                    doctorPreference.saveIsTapTargetShown(hospitalActivity.this, true);
+//                                }
+//
+//                                @Override
+//                                public void onHidePromptComplete()
+//                                {
+//                                    doctorPreference.saveIsTapTargetShown(hospitalActivity.this, true);
+//                                }
+//                            })
+//                            .show();
+//
+//                }
+//            });
+//        }
 
         return true;
     }
@@ -269,8 +269,6 @@ public class hospitalActivity extends AppCompatActivity {
                 hospitalSearchBar.enableSearch();
                 hospitalSearchBar.hideSuggestionsList();
                 break;
-            case R.id.aboutUs:
-                mMaterialDialog.show();
         }
         return super.onOptionsItemSelected(item);
     }

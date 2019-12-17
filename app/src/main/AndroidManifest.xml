@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_finding_doctor_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PatientRegister"></activity>
         <activity
             android:name=".MainActivity"
             android:noHistory="true" />
@@ -113,7 +114,7 @@
         </activity>
         <activity
             android:name=".verifyPatient2"
-            android:theme="@style/AppTheme2"></activity>
+            android:theme="@style/AppTheme2" />
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
@@ -121,12 +122,13 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".settingsActivity"
+        <activity
+            android:name=".settingsActivity"
             android:parentActivityName=".patientsListActivity"
             android:theme="@style/AppTheme1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".patientsListActivity"/>
+                android:value=".patientsListActivity" />
         </activity>
     </application>
 

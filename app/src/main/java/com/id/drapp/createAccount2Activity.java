@@ -116,14 +116,14 @@ public class createAccount2Activity extends AppCompatActivity {
             }
         });
 
-        userPic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-                photoPickerIntent.setType("image/*");
-                startActivityForResult(photoPickerIntent, RC_PHOTO_PICKER);
-            }
-        });
+//        userPic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+//                photoPickerIntent.setType("image/*");
+//                startActivityForResult(photoPickerIntent, RC_PHOTO_PICKER);
+//            }
+//        });
     }
 
 

@@ -249,39 +249,39 @@ public class patientsListActivity extends AppCompatActivity implements Navigatio
         // This adds menu items to the app bar.
         getMenuInflater().inflate(R.menu.menu, menu);
 
-        if(doctorPreference.getIsTapTargetShown(this)){
-
-        }else {
-            new Handler().post(new Runnable() {
-                @Override
-                public void run() {
-                    final View view = findViewById(R.id.logout);
-
-                    new MaterialTapTargetPrompt.Builder(patientsListActivity.this)
-                            .setTarget(view)
-                            .setBackgroundColour(getResources().getColor(R.color.actionBar))
-                            .setPrimaryText("Search Patients")
-                            .setSecondaryText("You can Search Patients in your Offline Database.")
-                            .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener()
-                            {
-                                @Override
-                                public void onHidePrompt(MotionEvent event, boolean tappedTarget)
-                                {
-                                    //TODO: Store in SharedPrefs so you don't show this prompt again.
-                                    Activity patientsListActivity = patientsListActivity.this;
-                                    patientsFragment.showTapTarget(patientsListActivity.this, patientsListActivity);
-                                }
-
-                                @Override
-                                public void onHidePromptComplete()
-                                {
-                                }
-                            })
-                            .show();
-
-                }
-            });
-        }
+//        if(doctorPreference.getIsTapTargetShown(this)){
+//
+//        }else {
+//            new Handler().post(new Runnable() {
+//                @Override
+//                public void run() {
+//                    final View view = findViewById(R.id.logout);
+//
+//                    new MaterialTapTargetPrompt.Builder(patientsListActivity.this)
+//                            .setTarget(view)
+//                            .setBackgroundColour(getResources().getColor(R.color.actionBar))
+//                            .setPrimaryText("Search Patients")
+//                            .setSecondaryText("You can Search Patients in your Offline Database.")
+//                            .setOnHidePromptListener(new MaterialTapTargetPrompt.OnHidePromptListener()
+//                            {
+//                                @Override
+//                                public void onHidePrompt(MotionEvent event, boolean tappedTarget)
+//                                {
+//                                    //TODO: Store in SharedPrefs so you don't show this prompt again.
+//                                    Activity patientsListActivity = patientsListActivity.this;
+//                                    patientsFragment.showTapTarget(patientsListActivity.this, patientsListActivity);
+//                                }
+//
+//                                @Override
+//                                public void onHidePromptComplete()
+//                                {
+//                                }
+//                            })
+//                            .show();
+//
+//                }
+//            });
+//        }
 
         return true;
     }
