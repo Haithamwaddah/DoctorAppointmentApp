@@ -81,7 +81,7 @@ public class verifyPatient2 extends AppCompatActivity {
         verifyCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progressDialog.show();
+//                progressDialog.show();
                 PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, codeReceived.getText().toString().trim());
                 signInWithPhoneAuthCredential(credential);
             }
@@ -105,7 +105,7 @@ public class verifyPatient2 extends AppCompatActivity {
                             Intent intent1 = new Intent(verifyPatient2.this, hospitalActivity.class);
                             intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent1.putExtra("phone", phone);
-                            progressDialog.dismiss();
+//                            progressDialog.dismiss();
                             startActivity(intent1);
                         } else {
                             // Sign in failed, display a message and update the UI
